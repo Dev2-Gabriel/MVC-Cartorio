@@ -7,3 +7,8 @@ Local do arquivo: core\Config.php Mude caso nescessário, as seguintes definiç�
 *define('URL', 'http://localhost/innersoft'); *define('URLADM', 'http://localhost/innersoft/'); Em ambas as urls, substitua o 'localhost' pela hospedagem do site.
 
 ATENÇÃO pt2: Inicialize o projeto com o seguinte comando no seu terminal: composer update Isso deve ser feito no terminal referente a pasta do seu projeto, exemplo: C:\Users\Você\Desktop\innersoft> composer update
+
+6/05/2024:
+Foi adicionado no programa, a capacidade de inserir os dados vindos, do formulário de cadastro de usuários, no banco de dados.
+
+Também foi criado na pasta assets um arquivo js que valida se os dados dos formulários, de login e do cadastro de usuários.
