@@ -13,7 +13,7 @@
     }
 ?>
 
-<form action="" method="post">
+<form action="" method="post" id="form-login">
     <label>Usuário: </label>
     <input type="text" name="user" id="user" placeholder="Digite o nome de usuário" value="<?php if (isset($valorForm['user'])) {echo $valorForm['user'];}?>"> <br><br>
 

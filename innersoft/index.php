@@ -12,8 +12,10 @@
 <body>
     <?php 
         require './vendor/autoload.php';
-        $home = new Core\ConfingController();
+        $home = new Core\ConfigController();
         $home->loadPage();
     ?>
+
+    <script src="<?php echo URLADM ?>app/adms/assets/js/custom_adms.js"></script>
 </body>
 </html>

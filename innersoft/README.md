@@ -15,3 +15,7 @@ ATENÇÃO pt2: Inicialize o projeto com o seguinte comando no seu terminal: comp
 Isso deve ser feito no terminal referente a pasta do seu projeto, exemplo: 
 C:\Users\Você\Desktop\innersoft> composer update
 
+6/05/2024
+Foi adicionado no programa, a capacidade de inserir os dados vindos, do formulário de cadastro de usuários, no banco de dados.
+
+Também foi criado na pasta assets um arquivo js que valida se os dados dos formulários, de login e do cadastro de usuários.
