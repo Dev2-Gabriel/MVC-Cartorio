@@ -19,4 +19,6 @@
 
     <label>Senha: </label>
     <input type="password" name="pass" id="pass" placeholder="Digite a senha" value="<?php if (isset($valorForm['password'])) {echo $valorForm['password'];}?>"> <br><br>
+
+    <button type="submit" name="SendLogin" value="Acessar">Acessar</button>
 </form>
