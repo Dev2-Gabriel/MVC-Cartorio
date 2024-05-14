@@ -15,13 +15,13 @@
 
 <form action="" id="form-new-user" method="post">
     <label>Nome: </label>
-    <input type="text" name="name" id="name" placeholder="Nome completo" required><br><br>
+    <input type="text" name="nome" id="name" placeholder="Nome completo" required><br><br>
 
     <label>Email: </label>
     <input type="email" name="email" id="email" placeholder="Seu endereço de email" required> <br><br>
 
     <label>Senha: </label>
-    <input type="password" name=password id="pass" placeholder="Informe a sua senha" required> <br><br>
+    <input type="password" name=senha id="pass" placeholder="Informe a sua senha" required> <br><br>
 
     <button type="submit" name="SendNewUser" value="Cadastrar">Cadastrar</button>
 </form>

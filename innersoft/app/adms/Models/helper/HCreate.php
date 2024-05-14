@@ -3,7 +3,7 @@
 
     use PDOException;
 
-    class MCreate extends MConn {
+    class HCreate extends HConn {
         private string $table;
         private array $data;
         private string|null $result;
@@ -11,7 +11,7 @@
         private string $query;
         private object $conn;
 
-        function getResult():string{
+        function getResult():string {
             return $this->result;
         }
 
@@ -26,7 +26,7 @@
         }
 
         // prepara os valores para serem colocados no banco
-        private function Exec_ReplaceValores():void {
+        private function Exec_ReplaceValores() {
             // coloca o nome das colunas corretamente;
             $colunas = implode(', ', array_keys($this->data));
 
@@ -34,7 +34,6 @@
             $values = ':' . implode(', :', array_keys($this->data));
 
             $this->query = "INSERT INTO {$this->table} ($colunas) VALUES ($values)";
-
             $this->Exec_Comando();
         }
 

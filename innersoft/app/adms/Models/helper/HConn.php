@@ -10,7 +10,7 @@
      * Caso seja nescessario mudar alguma variável, mude especificamente no arquivo Config.php, na pasta Core;
      * Core/Config.php
     */
-    abstract class MConn{
+    abstract class HConn{
         private string $host = HOST;
         private string $user = USER;
         private string $pass = PASS;

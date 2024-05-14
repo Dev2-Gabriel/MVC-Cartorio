@@ -1,7 +1,7 @@
 <?php 
     namespace App\adms\Models\helper;
 
-    class MvalorCampoVazio {
+    class HvalorCampoVazio {
         private array|null $data;
         private bool $result;
 
@@ -15,7 +15,7 @@
 
             $this->data = array_map('strip_tags', $this->data);
 
-            $this->data = array_merge('trim', $this->data);
+            $this->data = array_map('trim', $this->data);
 
             if(in_array('', $this->data)){
                 $_SESSION['msg'] = "<p style='color: #f00'>Erro: Nescessário preencher todos os campos!</p> ";
