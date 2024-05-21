@@ -1,28 +1,45 @@
-Aqui está o código principa, que pode ou será utilizado no projeto;
+Projeto eConcilia - Sistema para gestão de Câmaras de Mediação e Conciliação de Serviços Extrajudiciais
+InnerSoft Tecnologia Ltda.
 
-ATENÇÃO: No arquivo o Config talvez seja nescessário colocar a senha, e o host onde o projeto está hospedado
-No caso apenas substituir o localhost presente no arquivo, nele também talvez seja nescessário acrescentar a senha do banco de dados mysql para que ele funcione;
+Descrição
 
-Local do arquivo: core\Config.php
-Mude caso nescessário, as seguintes definições:
-*define('PASS', ''); --> entre as aspas simples vaizias, informe a senha do banco; 
+Este repositório contém o código principal do projeto InnerSoft. Siga as instruções abaixo para configurar e inicializar o projeto corretamente.
+Configuração
+Configuração do Banco de Dados
 
-*define('URL', 'http://localhost/innersoft');
-*define('URLADM', 'http://localhost/innersoft/');
-Em ambas as urls, substitua o 'localhost' pela hospedagem do site.
+É necessário configurar o arquivo de configuração do projeto para conectar ao banco de dados. Edite o arquivo core/Config.php conforme necessário:
 
-ATENÇÃO pt2: Inicialize o projeto com o seguinte comando no seu terminal: composer update
-Isso deve ser feito no terminal referente a pasta do seu projeto, exemplo: 
+    Senha do Banco de Dados:
+
+    php
+
+define('PASS', ''); // Insira a senha do banco de dados entre as aspas simples
+
+URL do Projeto:
+
+php
+
+    define('URL', 'http://localhost/innersoft');
+    define('URLADM', 'http://localhost/innersoft/');
+
+    Substitua 'localhost' pelo endereço da hospedagem do site.
+
+Inicialização do Projeto
+
+Para inicializar o projeto, execute o seguinte comando no terminal dentro do diretório do projeto:
+
+composer update
+
+Exemplo de caminho no terminal (windows):
 C:\Users\Você\Desktop\innersoft> composer update
 
-6/05/2024
-Foi adicionado no programa, a capacidade de inserir os dados vindos, do formulário de cadastro de usuários, no banco de dados.
+Atualizações Recentes
+06/05/2024
 
-Também foi criado na pasta assets um arquivo js que valida se os dados dos formulários, de login e do cadastro de usuários.
+    Adicionada a capacidade de inserir dados do formulário de cadastro de usuários no banco de dados.
+    Criado um arquivo JavaScript na pasta assets para validar os dados dos formulários de login e cadastro de usuários.
 
 14/05/2024
-Foi adicionado uma nova aba que é referente a comparação de email,
-nela fazemos um pequeno comparativo com o email que será cadastrado como um novo usuário,
-com um dos emails já cadastrados no banco de dados;
 
-Foi colocado também, no arquivo js, uma verificação de senha com pelo menos 6 caracteres;
+    Adicionada uma nova aba para comparação de e-mails, onde é feito um comparativo entre o e-mail que será cadastrado e os e-mails já existentes no banco de dados.
+    Implementada verificação de senha no arquivo JavaScript, exigindo pelo menos 6 caracteres.
