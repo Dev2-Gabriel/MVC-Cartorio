@@ -1,4 +1,4 @@
-Projeto eConcilia - Sistema para gestão de Câmaras de Mediação e Conciliação de Serviços Extrajudiciais
+Projeto SCartConcilia - Sistema para gestão de Câmaras de Mediação e Conciliação de Serviços Extrajudiciais
 InnerSoft Tecnologia Ltda.
 
 Descrição
